@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quntnex - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        /* Header styles */
+        header {
+            background-color: #0073e6;
+            padding: 15px 0;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        /* Banner Section */
+        .banner {
+            background-image: url('https://via.placeholder.com/1920x600');
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+        }
+        /* Services Section */
+        .services {
+            padding: 50px;
+            text-align: center;
+        }
+        .services h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+        .service-container {
+            display: flex;
+            justify-content: space-around;
+        }
+        .service {
+            background-color: white;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .service h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        /* About Section */
+        .about {
+            background-color: #0073e6;
+            color: white;
+            padding: 50px;
+            text-align: center;
+        }
+        .about h2 {
+            font-size: 32px;
+        }
+        .about p {
+            font-size: 18px;
+            width: 70%;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        /* Contact Section */
+        .contact {
+            padding: 50px;
+            text-align: center;
+        }
+        .contact h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+        form {
+            width: 40%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form input[type="submit"] {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover {
+            background-color: #005bb5;
+        }
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Quntnex</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        Innovative Solutions for Tomorrow
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service">
+                <h3>Web Development</h3>
+                <p>We build scalable and responsive websites for businesses and individuals.</p>
+            </div>
+            <div class="service">
+                <h3>Cloud Solutions</h3>
+                <p>Leverage the power of the cloud to streamline your business processes.</p>
+            </div>
+            <div class="service">
+                <h3>AI & ML Consulting</h3>
+                <p>Implement cutting-edge AI and ML solutions to boost business efficiency.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>About Quntnex</h2>
+        <p>At Quntnex, we are dedicated to providing the most innovative technology solutions in the market. From web development to AI consulting, our services are designed to help your business grow and succeed. With a team of experts and a focus on customer satisfaction, we deliver high-quality results for each project we undertake.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form action="/submit-contact" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Quntnex. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
